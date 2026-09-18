@@ -2,7 +2,7 @@
 
 生徒に4択の質問を1問ずつ投げかけ、栄養学への関心を言葉にし、兵庫県立大学・奈良女子大学が求める学生像に沿った志望理由書の下書きを自動作成するアプリです。
 
-公開URL: https://rikakiso-shibou-riyu.vercel.app/
+公開URL: https://watashi-no-eiyogaku.vercel.app/
 
 ## 使い方
 
