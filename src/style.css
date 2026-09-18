@@ -98,7 +98,7 @@ a {
 .brand h1 {
   font-family: var(--display);
   font-weight: 400;
-  font-size: 1.22rem;
+  font-size: 1.12rem;
   color: var(--primary-deep-2);
   margin: 0;
 }

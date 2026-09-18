@@ -106,7 +106,7 @@ function topbar(rightLabel) {
   return `
     <header class="topbar">
       <div class="brand">
-        <h1>リカキソ志望理由</h1>
+        <h1>わたしの栄養学</h1>
         <span class="tag">${escapeHtml(rightLabel)}</span>
       </div>
     </header>
@@ -116,31 +116,28 @@ function topbar(rightLabel) {
 function renderHome() {
   return `
     <div class="wrap">
-      ${topbar("2028年度入学検討")}
+      ${topbar("志望理由の下書き")}
       <p class="sub">
-        <a class="sister" href="${COMPASS_URL}">大学比較は リカキソ栄養コンパス →</a>
-      </p>
-      <p class="sub">
-        4択に答えるだけで、兵庫県立大学と奈良女子大学が求める学生像に沿った
+        食と健康の関心を、栄養学の学びにつなげるよ。4択に答えると、兵庫県立大学と奈良女子大学に向けた
         <strong>志望理由の下書き</strong>ができるよ。高2のいま受ける
         <strong>2028年度（令和10年度）</strong>入学が対象／確認日：2026年9月18日
       </p>
       <section class="hero">
         <div class="hero-photo">
-          <img src="images/hero-write.png" alt="志望理由書を書く女子高校生" />
+          <img src="images/hero-write.png" alt="栄養学の志望理由を書く女子高校生" />
         </div>
         <div>
-          <p class="eyebrow">Statement of purpose</p>
-          <h2 class="hero-title">4択から、<mark>わたしの志望理由</mark>。</h2>
+          <p class="eyebrow">Nutrition · Statement</p>
+          <h2 class="hero-title">4択から、<mark>栄養学</mark>への理由。</h2>
           <p class="hero-lede">
-            関心の入口、実践と研究、得意な教科の使い方を順に聞くよ。提出用の完成稿ではなく、面談と清書のための下書きだよ。
+            だれの食に関わりたいか、実践と研究のどこに惹かれるかを順に聞くよ。提出用の完成稿ではなく、面談と清書のための下書きだよ。
           </p>
         </div>
       </section>
       <section class="photo-strip" aria-label="フォトギャラリー">
         <div class="ps-head">
           <p class="eyebrow">Photo story</p>
-          <h2>いまの関心から、下書きへ</h2>
+          <h2>食の関心から、栄養学へ</h2>
         </div>
         <div class="photo-scroll">
           ${HOME_STRIP.map(
@@ -179,6 +176,7 @@ function renderHome() {
       </div>
       <footer class="disclaimer">
         <p>${escapeHtml(SOURCE_NOTE)}</p>
+        <p><a href="${COMPASS_URL}">栄養系大学の入試比較はこちら</a></p>
       </footer>
     </div>
   `;
@@ -236,8 +234,8 @@ function renderResult() {
           <img src="images/draft-done.png" alt="志望理由の下書きができた女子高校生" />
         </div>
         <div class="inner">
-          <p class="eyebrow">Statement of purpose / draft</p>
-          <h2>志望理由書（簡易下書き）</h2>
+          <p class="eyebrow">Nutrition · Draft</p>
+          <h2>栄養学の志望理由（簡易下書き）</h2>
           <div class="chars">${escapeHtml(university.name)}　${essay.chars}字</div>
           <p class="essay">${escapeHtml(essay.text)}</p>
         </div>
@@ -269,7 +267,7 @@ function renderResult() {
             .join("")}
         </ul>
         <p class="warn">
-          実体験していない活動・受賞・実習は書き足さないでね。「入れば管理栄養士になれる」「文系だから理科は不要」「兵庫県立は実習だけ・奈良女子は研究だけ」といった表現は使っていないよ。６年一貫は希望者の接続制度で、全員進学ではないよ。2028年度の募集要項は大学公式で再確認してね。
+          実体験していない活動・受賞・実習は書き足さないでね。「入れば管理栄養士になれる」「兵庫県立は実習だけ・奈良女子は研究だけ」といった表現は使っていないよ。６年一貫は希望者の接続制度で、全員進学ではないよ。2028年度の募集要項は大学公式で再確認してね。
         </p>
       </section>
     </div>
